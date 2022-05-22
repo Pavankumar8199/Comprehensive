@@ -18,11 +18,6 @@ pipeline {
                 bat "mvn test -f Employee-Management-Testing"
             }
         }
-        stage('test') {
-            steps {
-                bat "mvn test -f Employee-Management-Testing"
-            }
-        }
-        }
+    }
 }
 
