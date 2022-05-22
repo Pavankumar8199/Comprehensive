@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage{'git repo & clean'} {
+        stage('git repo & clean') {
             steps {
                // bat "rmdir /s /q Employee-Management-Testing"
                 bat "git clone https://github.com/Pavankumar8199/Comprehensive.git"
@@ -18,11 +18,10 @@ pipeline {
                 bat "mvn test -f Employee-Management-Testing"
             }
         }
-         stage('package') {
+        stage('test') {
             steps {
-                bat "mvn package -f Employee-Management-Testing"
+                bat "mvn test -f Employee-Management-Testing"
             }
         }
-    }
-}
+        }
 }
