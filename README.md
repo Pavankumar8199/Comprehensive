@@ -9,3 +9,5 @@ Maven dependencies used in this project are listed below,
 >* Spring Data JPA
 >* Spring Data Rest
 >* H2 Database
+ 
+ new deployment
