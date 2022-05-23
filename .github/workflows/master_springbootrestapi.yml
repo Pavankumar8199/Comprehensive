@@ -49,5 +49,5 @@ jobs:
         with:
           app-name: 'SpringbootRestapi'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_EB4F7E7DB95E4DD997EDA93FC77F3D38 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A881180D7BDD4A09949EE0A4EFE0F656 }}
           package: '*.jar'
