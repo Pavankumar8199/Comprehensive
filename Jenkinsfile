@@ -1,17 +1,15 @@
-pipeline {
+pipeline{
     agent any
     tools{
-        maven 'MAVEN'
+        maven 'MAVEN_HOME'
         
     }
     stages{
         
-        stage("Maven Build"){
+        stage('Maven Build'){
             steps{
-                bat 'mvn-Dmaven.test.failure.ignore=true clean package'
+                bat "mvn-Dmaven.test.failure.ignore=true clean package"
             }
         }
-        
     }
 }
-
